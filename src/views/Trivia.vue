@@ -1,35 +1,35 @@
 <template>
   <div class="login">
     <div class="login__container container">
-      <h2>¡Conoce los productos que tenemos para ti!</h2>
+      <h2>Ayúdanos a mejorar tu experiencia. <br>Selecciona 1 o más opciones</h2>
       <div class="login__container--buttons">
-        <button class="button-trivia">
+        <router-link to="/products" class="button-trivia">
             Auto
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Vacaciones
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Casa
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Viajes
-        </button>
+        </router-link>
       </div>
         <hr>
       <div class="login__container--buttons">
-        <button class="button-trivia">
+        <router-link to="/products" class="button-trivia">
             Dinero
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Compras Online
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Salud
-        </button>
-        <button class="button-trivia">
+        </router-link>
+        <router-link to="/products" class="button-trivia">
             Protección
-        </button>
+        </router-link>
       </div>
       <hr>
       <router-link to="/products" class="button-primary">

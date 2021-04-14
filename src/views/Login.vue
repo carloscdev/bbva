@@ -4,19 +4,19 @@
       <h2>Iniciar sesión</h2>
       <div class="login__container--buttons">
         <button class="button-social">
-          <router-link to="/products">
+          <router-link to="/trivia">
             <font-awesome-icon :icon="['fab', 'google']" />
             Google
           </router-link>
         </button>
         <button class="button-social">
-          <router-link to="/products">
+          <router-link to="/trivia">
             <font-awesome-icon :icon="['fab', 'facebook']" />
             Facebook
           </router-link>
         </button>
         <button class="button-social">
-          <router-link to="/products">
+          <router-link to="/trivia">
             <font-awesome-icon :icon="['fab', 'twitter']" />
             Twitter
           </router-link>

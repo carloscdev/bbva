@@ -91,16 +91,15 @@ button {
 }
 
 .button-trivia {
-  color: $black-300;
-  border: black 3px solid;
-  background-color: $white-100;
+  color: white;
+  background-color: $blue-200;
   padding: 1rem 2rem;
   text-align: center;
   transition: background $transition;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   &:focus {
     outline: none;
     box-shadow:  $shadow;
@@ -108,5 +107,26 @@ button {
   &:hover {
     background-color: $blue-300;
     color: white;
+  }
+}
+.card {
+  background-color: $blue-100;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-content {
+    p {
+      color: white;
+    }
+  }
+  &:hover {
+    color: white;
+    background-color: $blue-200;
+  }
+  &:focus {
+    outline: none;
   }
 }
