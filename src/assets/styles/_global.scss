@@ -14,3 +14,79 @@ body {
 .button {
   padding: 1rem 2rem;
 }
+.color-yellow {
+  color: $yellow-200;
+}
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+button {
+  &:focus {
+    box-shadow:  $shadow;
+  }
+}
+.button-primary {
+  color: $white-100;
+  background-color: $green-200;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  &::after {
+    content: '';
+    background-color: rgba($color: $black-300, $alpha: 0.15);
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    height: 250px;
+    width: 110%;
+    transform: rotate(15deg);
+    transition: width $transition;
+    z-index: 1;
+  }
+  &:hover {
+    color: $white-100;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover::after {
+    width: 0%;
+  }
+  &:focus {
+    box-shadow:  $shadow;
+  }
+}
+.button-primary-outline {
+  color: $blue-300;
+  background-color: transparent;
+  border: 2px solid $green-200;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.button-social {
+  color: $white-100;
+  background-color: $blue-200;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: background $transition;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus {
+    outline: none;
+    box-shadow:  $shadow;
+  }
+  &:hover {
+    background-color: $blue-300;
+  }
+}

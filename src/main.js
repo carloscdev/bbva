@@ -24,8 +24,8 @@ Vue.use(Buefy, {
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development"
-    ? "http://weeare-api.beneficios.pe/regalos/api"
-    : "http://weeare-api.beneficios.pe/regalos/api";
+    ? ""
+    : "";
 Vue.use(VueAxios, axios);
 
 Vue.use(Vuelidate);

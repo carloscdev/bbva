@@ -1,0 +1,48 @@
+.login {
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    &--buttons {
+      display: flex;
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        display: block;
+      }
+    }
+    .button-primary {
+      display: block;
+    }
+  }
+}
+.register {
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    &--buttons {
+      display: flex;
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        display: block;
+      }
+    }
+    .button-primary-outline {
+      display: block;
+    }
+  }
+}

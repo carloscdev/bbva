@@ -1,0 +1,24 @@
+.navbar {
+  background-color: $blue-300;
+  &__container {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 130px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      a {
+        display: block;
+        margin-left: 1rem;
+        &:hover {
+          color: $white-100;
+        }
+      } 
+    }
+  }
+}
