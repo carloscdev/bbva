@@ -24,8 +24,8 @@ Vue.use(Buefy, {
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development"
-    ? ""
-    : "";
+    ? "http://localhost:5000/api/auth/"
+    : "http://localhost:5000/api/auth/";
 Vue.use(VueAxios, axios);
 
 Vue.use(Vuelidate);

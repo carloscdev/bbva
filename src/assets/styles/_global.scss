@@ -35,18 +35,18 @@ button {
   text-align: center;
   position: relative;
   overflow: hidden;
-  z-index: 0;
+  display: block;
+  width: 300px;
   &::after {
     content: '';
     background-color: rgba($color: $black-300, $alpha: 0.15);
     position: absolute;
-    top: -5rem;
+    top: 0;
     right: 0;
-    height: 250px;
-    width: 110%;
-    transform: rotate(15deg);
+    width: 100%;
+    height: 100%;
+    width: 100%;
     transition: width $transition;
-    z-index: 1;
   }
   &:hover {
     color: $white-100;
@@ -69,7 +69,6 @@ button {
   padding: 1rem 2rem;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 .button-social {
   color: $white-100;
@@ -88,5 +87,26 @@ button {
   }
   &:hover {
     background-color: $blue-300;
+  }
+}
+
+.button-trivia {
+  color: $black-300;
+  border: black 3px solid;
+  background-color: $white-100;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: background $transition;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus {
+    outline: none;
+    box-shadow:  $shadow;
+  }
+  &:hover {
+    background-color: $blue-300;
+    color: white;
   }
 }

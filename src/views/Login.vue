@@ -4,16 +4,22 @@
       <h2>Iniciar sesión</h2>
       <div class="login__container--buttons">
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'google']" />
-          Google
+          <router-link to="/products">
+            <font-awesome-icon :icon="['fab', 'google']" />
+            Google
+          </router-link>
         </button>
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'facebook']" />
-          Facebook
+          <router-link to="/products">
+            <font-awesome-icon :icon="['fab', 'facebook']" />
+            Facebook
+          </router-link>
         </button>
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
-          Twitter
+          <router-link to="/products">
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+            Twitter
+          </router-link>
         </button>
       </div>
       <hr>
@@ -28,8 +34,14 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-
+  methods: {
+    loginFace() {
+      axios.get('facebook')
+      .then(response => console.log(response))
+    }
+  }
 }
 </script>
 

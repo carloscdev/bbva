@@ -4,16 +4,22 @@
       <h2>Registrate</h2>
       <div class="register__container--buttons">
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'google']" />
-          Google
+          <router-link to="/trivia">
+            <font-awesome-icon :icon="['fab', 'google']" />
+            Google
+          </router-link>
         </button>
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'facebook']" />
-          Facebook
+          <router-link to="/trivia">
+            <font-awesome-icon :icon="['fab', 'facebook']" />
+            Facebook
+          </router-link>
         </button>
         <button class="button-social">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
-          Twitter
+          <router-link to="/trivia">
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+            Twitter
+          </router-link>
         </button>
       </div>
       <hr>
