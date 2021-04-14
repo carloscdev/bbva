@@ -30,6 +30,9 @@
         <b-field label="Correo">
               <b-input></b-input>
         </b-field>
+        <b-field label="Edad">
+              <b-input></b-input>
+        </b-field>
         <b-field label="Operador">
               <b-input></b-input>
         </b-field>
@@ -42,13 +45,7 @@
         <b-field label="DNI">
               <b-input></b-input>
         </b-field>
-        <b-field label="Fecha Nacimiento">
-              <b-input></b-input>
-        </b-field>
         <b-field label="Correo">
-              <b-input></b-input>
-        </b-field>
-        <b-field label="Operador">
               <b-input></b-input>
         </b-field>
         <b-field label="Celular">
