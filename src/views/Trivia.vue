@@ -1,34 +1,40 @@
 <template>
   <div class="login">
     <div class="login__container container">
-      <h2>Ayúdanos a mejorar tu experiencia. <br>Selecciona 1 o más opciones</h2>
-      <div class="login__container--buttons">
+      <h2>¿Cuáles son tus intereses personales?. <br>Selecciona 1 a 4 opciones</h2>
+      <div class="grid-trivia">
         <router-link to="/products" class="button-trivia">
-            Auto
+            Seguro Vehicular
         </router-link>
         <router-link to="/products" class="button-trivia">
-            Vacaciones
+            Autos Seguros Vida
         </router-link>
         <router-link to="/products" class="button-trivia">
-            Casa
-        </router-link>
-        <router-link to="/products" class="button-trivia">
-            Viajes
+            Seguro Familiar de salud
         </router-link>
       </div>
         <hr>
-      <div class="login__container--buttons">
+      <div class="grid-trivia">
         <router-link to="/products" class="button-trivia">
-            Dinero
+            Crédito Hipotecário
         </router-link>
         <router-link to="/products" class="button-trivia">
-            Compras Online
+            Crédito Vehicular
         </router-link>
         <router-link to="/products" class="button-trivia">
-            Salud
+            Fondos Mútuos
+        </router-link>
+      </div>
+        <hr>
+      <div class="grid-trivia">
+        <router-link to="/products" class="button-trivia">
+            Servicios digitales
         </router-link>
         <router-link to="/products" class="button-trivia">
-            Protección
+            Seguro Renta Hospitalaria
+        </router-link>
+        <router-link to="/products" class="button-trivia">
+            Préstamo Vehicular
         </router-link>
       </div>
       <hr>
@@ -41,6 +47,10 @@
   </div>
 </template>
 
-<script>
-
-</script>
+<style lang="scss">
+.grid-trivia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+</style>
